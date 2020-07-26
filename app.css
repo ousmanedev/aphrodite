@@ -1,0 +1,69 @@
+@font-face {
+  font-family: "Almondita";
+  src: url("/fonts/Almondita.ttf");
+}
+
+#cover {
+  min-height: 100%;
+  height: 100%;
+  background: url(img/cover.jpeg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#main {
+  min-height: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#cover .navbar {
+  background-color: rgba(127,71,38,.7);
+  border-radius: 0%;
+}
+
+#cover .navbar * {
+  color: #fff;
+}
+
+#cover .navbar *:hover, #cover .navbar *:focus {
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+.navbar-brand-centered {
+  position: absolute;
+  left: 50%;
+  display: block;
+  width: 160px;
+  text-align: center;
+  background-color: transparent;
+  font-family: 'Almondita';
+  font-size: 3.5em;
+}
+.navbar>.container .navbar-brand-centered, 
+.navbar>.container-fluid .navbar-brand-centered {
+  margin-left: -80px;
+}
+
+div#discover-section p {
+  color: #fff;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+button.btn {
+  background-color: #fff;
+  color: #333;
+  font-size: 1em;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+button.btn:hover {
+  background-color: rgba(127,71,38,.7);
+}
