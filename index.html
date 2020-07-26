@@ -2,6 +2,7 @@
   <title>Aphrodite Paris</title>
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
     <link rel="stylesheet" href="app.css">
     <meta charset="UTF-8">
  </head>
@@ -18,15 +19,18 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <div class="navbar-brand navbar-brand-centered">Aphrodite</div>
+            <div class="navbar-brand navbar-brand-centered">
+              <a href="/">Aphrodite</a>
+            </div>
           </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="navbar-brand-centered">
             <ul class="nav navbar-nav">
-              <li><a href="#">Shop</a></li>
-              <li><a href="#">A Propos</a></li>
-              <li><a href="#">FAQ</a></li>
+              <li><a href="/#products">Shop</a></li>
+              <li><a href="/about">A Propos</a></li>
+              <li><a href="/faq">FAQ</a></li>
+              <li><a href="/contact">Contact</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right navbar-fixed">
               <li>
@@ -39,12 +43,42 @@
       <div id="main">
         <div id="discover-section" align="center" class="lead">
           <p>
-            BECAUSE SKIN CARE IS SELF CARE
+            BECAUSE SKIN CARE IS SELF CARE.
           </p>
-          <button class="btn">DECOUVRIR</button>
+          <a href="/#products"><button class="btn btn-theme">DECOUVRIR</button></a>
         </div>
       </div>
     </div>
+
+    <div class="container-fluid">
+      <div id="products" class="section" align="center">
+        <h2 class="lead">Nos Produits</h2>
+
+        <div class="row">
+          <div class="col-xs-6 col-md-4">
+            <a href="/products/1" class="thumbnail">
+              <img src="/img/product_1.jpeg" alt="Product 2">
+            </a>
+          </div>
+          <div class="col-xs-6 col-md-4">
+            <a href="/products/2" class="thumbnail">
+              <img src="/img/product_2.jpeg" alt="Product 3">
+            </a>
+          </div>
+          <div class="col-xs-6 col-md-4">
+            <a href="/products/3" class="thumbnail">
+              <img src="/img/product_3.jpeg" alt="Product 1">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="insta" class="section">
+        <div class="lead">suivez-nous sur instagram</div>
+        <div class='embedsocial-instagram' data-ref="8482d27f1e0d97e0d4f8d93d147e4babe1104152"></div><script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/embedscript/in.js"; d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialInstagramScript"));</script>
+      </div>
+    </div>
+
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
   </body>

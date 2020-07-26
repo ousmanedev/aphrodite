@@ -3,6 +3,17 @@
   src: url("/fonts/Almondita.ttf");
 }
 
+html {
+  scroll-behavior: smooth;
+  font-style: 'Open Sans';
+}
+
+nav {
+  height: 70px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
 #cover {
   min-height: 100%;
   height: 100%;
@@ -21,18 +32,20 @@
   justify-content: center;
 }
 
-#cover .navbar {
+.navbar {
   background-color: rgba(127,71,38,.7);
   border-radius: 0%;
 }
 
-#cover .navbar * {
+.navbar li a {
   color: #fff;
+  font-size: 18px;
 }
 
-#cover .navbar *:hover, #cover .navbar *:focus {
+.navbar li a:hover, .navbar li a:focus {
+  color: #fff;
   text-decoration: underline;
-  background-color: transparent;
+  background-color: rgba(127,71,38,.7);
 }
 
 .navbar-brand-centered {
@@ -43,8 +56,14 @@
   text-align: center;
   background-color: transparent;
   font-family: 'Almondita';
-  font-size: 3.5em;
+  font-size: 4.5em;
+  color: #fff;
 }
+
+.navbar-brand-centered a {
+  color: #fff;
+}
+
 .navbar>.container .navbar-brand-centered, 
 .navbar>.container-fluid .navbar-brand-centered {
   margin-left: -80px;
@@ -56,7 +75,7 @@ div#discover-section p {
   font-weight: bold;
 }
 
-button.btn {
+button.btn.btn-theme, button.btn a{
   background-color: #fff;
   color: #333;
   font-size: 1em;
@@ -64,6 +83,46 @@ button.btn {
   padding-right: 32px;
 }
 
-button.btn:hover {
+button.btn.btn-theme:hover{
   background-color: rgba(127,71,38,.7);
+}
+
+.section {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.section .lead {
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+#products img {
+  height: 400px;
+}
+
+#products .thumbnail {
+  border-style: none;
+}
+
+#about {
+  margin-top: 100px;
+}
+
+#about #history img {
+  height: 550px;
+}
+
+#about #certification img {
+  height: 500px;
+}
+
+#about #history {
+  text-indent: 35px;
+}
+
+#faq img {
+  width: 400px;
 }
